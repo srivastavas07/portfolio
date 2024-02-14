@@ -3,12 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.12.1",
+    "@iconscout/react-unicons": "^2.0.2",
+    "@react-three/drei": "^9.96.1",
+    "@react-three/fiber": "^8.15.14",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "animate.css": "^4.1.1",
+    "framer-motion": "^10.18.0",
+    "maath": "^0.10.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.3",
     "react-scripts": "5.0.1",
+    "react-three": "^0.9.7",
+    "react-tilt": "^1.0.2",
+    "react-toastify": "^10.0.4",
+    "react-vertical-timeline-component": "^3.6.0",
+    "source-map-loader": "^5.0.0",
+    "three": "^0.160.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +48,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "7.21.11",
+    "tailwindcss": "^3.3.3"
   }
 }

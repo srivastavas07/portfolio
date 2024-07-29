@@ -14,7 +14,6 @@ import {
     mongodb,
     git,
     figma,
-    docker,
     amity,
     hastags,
     gsoc,
@@ -29,6 +28,7 @@ import {
     threejs,
     wordPress,
     dada,
+    Kwitter07
   } from "../assets";
   
   export const navLinks = [
@@ -216,6 +216,27 @@ import {
   ];
   
   const projects = [
+    {
+      name: "Kwitter07",
+      description:
+        "A MERN stack social media app with posting, liking, commenting, and following features. Includes AI-based sentiment analysis for tweets, user profile management, and notifications. Developed entirely from scratch.",
+      tags: [
+        {
+          name: "MERN-stack",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "api-Creation",
+          color: "green-text-gradient",
+        },
+        {
+          name: "fully-func",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: Kwitter07 ,
+      source_code_link: "https://github.com/srivastavas07/Kwitter",
+    },
     {
       name: "kEmotify",
       description:

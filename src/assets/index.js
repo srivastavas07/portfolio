@@ -32,6 +32,7 @@ import e_commerce from './e_commerce.png';
 import universityWebsite from './UniversityWebsite.png';
 import spotify from "./spotify.png";
 import wordPress from './wordPress.png'
+import Kwitter07 from "./kwitter07.png";
 
 import dada from "./clients/dada.png"
 
@@ -69,5 +70,6 @@ export {
   weatherApplication,
   spotify,
   wordPress,
+  Kwitter07,
   dada,
 };

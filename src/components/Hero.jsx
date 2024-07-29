@@ -2,11 +2,14 @@ import { motion } from 'framer-motion';
 import React from 'react';
 import { styles } from "../styles";
 import ComputerCanvas from './canvas/Computers';
+import useWindowSize from './customHooks/useWindowSize';
+import Developer from "../assets/Developer.png"
 //got to learn about default export and named export;
 //default export can be import with any name 
 // while normal export should be in {} braces with the exact name;
 
 const Hero = () => {
+  const {width} = useWindowSize();
   const name = 'KUNAL..'
   // const here = 'HERE..'
   return (
@@ -25,7 +28,9 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 font-semibold text-white-100`}>I'm a Full-Stack Developer.<br/>developing good Looking Web Applications </p>
         </div>
       </div>
-      <ComputerCanvas />
+
+      {width>600 ? <ComputerCanvas/> : <img src={Developer} alt="hero" className='absolute left-[50%] top-[50%] h-[44%] developer-image' />}           
+
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">

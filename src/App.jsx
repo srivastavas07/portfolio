@@ -1,6 +1,6 @@
 /* eslint-disable */
+// issue encountering was react-scripts version should have been exactly 5.0.1
 import Header from "./components/Header.jsx"
-import 'animate.css';
 import './App.css';
 import { BrowserRouter } from "react-router-dom";
 import { Hero, About, Experience, Tech, Works, Feedbacks, Contact, StarsCanvas } from './components/index.js';

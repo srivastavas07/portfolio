@@ -289,5 +289,9 @@ body{
     box-shadow:0px 0px 0px #fff;
     transition:all .1s;
 }
-
-        
+.developer-image{
+  transform:translate(-50%,1%);
+}
+.techShadow{
+  box-shadow: 0 0 15px rgb(145, 67, 255);
+}

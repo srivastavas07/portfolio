@@ -6,6 +6,11 @@ import { projects } from "../constants/constants";
 import useWindowSize from './customHooks/useWindowSize';
 import { Tilt } from "react-tilt";
 
+// THE ISSUE HERE WAS MOTION.DIV (FRAMER MOTION) WAS NOT LOADING FOR MOBILE SCREENS AND CERTAIN DEVICES.
+// TEMP SOLUITON JUST REMOVED IT.
+// ISSUE DETAILS : AT LINE 26 THE HEIGHT PROPERTY IS CAUSING THE ISSUE.
+// THAT IS IT HAS SOMETHING TO DO WITH THE LAYOUT DUE TO WHICH WHOLE WORK COMPONENT IS FACING ISSUE AT MOBILE SCREENS.
+
 // import { fadeIn, textVariant } from "../utils/motion";
 // import { motion } from "framer-motion";
 
@@ -152,10 +157,10 @@ const Works = () => {
               speed: 450,
             }}
           >
-            <ProjectCard key={`project-${index}`} index={index} {...project} />
+            <ProjectCard index={index} {...project} />
           </Tilt>
         ) : (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard index={index} {...project} />
         )}
       </React.Fragment>
 ))}

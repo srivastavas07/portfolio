@@ -3,6 +3,7 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc/index";
 import { projects } from "../constants/constants";
+import useWindowSize from './customHooks/useWindowSize';
 
 // import { Tilt } from "react-tilt";
 // import { fadeIn, textVariant } from "../utils/motion";
@@ -121,6 +122,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 }
 
 const Works = () => {
+  const {width} = useWindowSize();
   return (
   <div>
     <div>
@@ -140,9 +142,23 @@ const Works = () => {
       </p>
     </div>
     <div className='mt-20 sm:flex sm:flex-wrap gap-8'>
-      {projects.map((project, index) => (
-        <ProjectCard key={`project-${index}`} index={index} {...project} />
-      ))}
+    {projects.map((project, index) => (
+      <React.Fragment key={`project-${index}`}>
+        {width > 600 ? (
+          <Tilt
+            options={{
+              max: 45,
+              scale: 1,
+              speed: 450,
+            }}
+          >
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          </Tilt>
+        ) : (
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        )}
+      </React.Fragment>
+))}
     </div>
   </div>
   )

@@ -30,9 +30,7 @@ const Contact = () => {
     setLoading(true);
     emailJs.send(SERVICE_ID, TEMPLATE_ID, {
       from_name: form.name,
-      to_name: "Kunal",
       from_email: form.email,
-      to_email: "lalakalaunda156@gmail.com",
       message: form.message,
 
     }, API_KEY)

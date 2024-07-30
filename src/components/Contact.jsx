@@ -12,7 +12,7 @@ const Contact = () => {
   const API_KEY = process.env.REACT_APP_API_KEY;
   const SERVICE_ID = process.env.REACT_APP_SERVICE_KEY;
   const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_KEY;
-  // console.log(API_KEY, SERVICE_ID, TEMPLATE_ID);
+  console.log(API_KEY, SERVICE_ID, TEMPLATE_ID);
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -30,9 +30,7 @@ const Contact = () => {
     setLoading(true);
     emailJs.send(SERVICE_ID, TEMPLATE_ID, {
       from_name: form.name,
-      to_name: "Kunal",
       from_email: form.email,
-      to_email: "lalakalaunda156@gmail.com",
       message: form.message,
 
     }, API_KEY)

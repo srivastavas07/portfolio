@@ -44,7 +44,9 @@ const About = () => {
         Passionate about problem-solving and creating innovative solutions, I am a dedicated Full Stack Developer with a strong focus on AI/ML.
         I thrive on challenging projects that push the boundaries of technology and allow me to explore new realms. With a deep understanding of
         both front-end and back-end development, I am equipped to deliver exceptional user experiences.
+
       </motion.p>
+      
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServicesCard key={service.title} index={index} {...service} />

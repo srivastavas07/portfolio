@@ -3,8 +3,8 @@ import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc/index";
 import { projects } from "../constants/constants";
-import { Tilt } from "react-tilt";
 
+// import { Tilt } from "react-tilt";
 // import { fadeIn, textVariant } from "../utils/motion";
 // import { motion } from "framer-motion";
 
@@ -84,7 +84,7 @@ import { Tilt } from "react-tilt";
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
-      <Tilt
+      <div
         className="bg-tertiary gradient-border rounded-1xl p-5 sm:w-[360px] mt-7 w-full">
         <div
           className='w-full h-[238px] relative border border-1 border-[#ffffff73] rounded-[8px]'>
@@ -116,7 +116,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             )
           })}
         </div>
-      </Tilt>
+      </div>
   )
 }
 

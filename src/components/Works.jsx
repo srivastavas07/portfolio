@@ -4,8 +4,8 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc/index";
 import { projects } from "../constants/constants";
 import useWindowSize from './customHooks/useWindowSize';
+import { Tilt } from "react-tilt";
 
-// import { Tilt } from "react-tilt";
 // import { fadeIn, textVariant } from "../utils/motion";
 // import { motion } from "framer-motion";
 

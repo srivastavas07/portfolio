@@ -28,7 +28,9 @@ import {
     threejs,
     wordPress,
     dada,
-    Kwitter07
+    Kwitter07,
+    Kmail,
+    Management
   } from "../assets";
   
   export const navLinks = [
@@ -236,6 +238,48 @@ import {
       ],
       image: Kwitter07 ,
       source_code_link: "https://github.com/srivastavas07/Kwitter",
+    },
+    {
+      name: "Kmail",
+      description:
+        "Say goodbye to the hassle of switching between apps! With Kmail, a full-fledged email application inspired by Gmail, you can generate AI-powered emails and send them directly—no copying, no pasting, just seamless productivity.",
+      tags: [
+        {
+          name: "AI",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "MailApp",
+          color: "green-text-gradient",
+        },
+        {
+          name: "MERN-stack",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: Kmail ,
+      source_code_link: "https://github.com/srivastavas07/Kmail",
+    },
+    {
+      name: "Employee Management",
+      description:
+      "Easily manage your employees with our software! You can create, edit, and delete employee records while ensuring the right data is entered through built-in validations. It's simple, efficient, and designed to make your management tasks hassle-free.",
+      tags: [
+        {
+          name: "Database",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Management",
+          color: "green-text-gradient",
+        },
+        {
+          name: "MERN-stack",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: Management ,
+      source_code_link: "https://github.com/srivastavas07/MERN_EMP",
     },
     {
       name: "kEmotify",

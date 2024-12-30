@@ -33,8 +33,9 @@ import universityWebsite from './UniversityWebsite.png';
 import spotify from "./spotify.png";
 import wordPress from './wordPress.png'
 import Kwitter07 from "./kwitter07.png";
-
-import dada from "./clients/dada.png"
+import Kmail from "./kmail.png";
+import Management from "./Management.png";
+import dada from "./clients/dada.png";
 
 
 export {
@@ -71,5 +72,7 @@ export {
   spotify,
   wordPress,
   Kwitter07,
+  Kmail,
+  Management,
   dada,
 };
